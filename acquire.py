@@ -20,7 +20,7 @@ def zillow_data():
         return get_zillow_data()
 
 def get_zillow_data():
-    #bring in a short list of features
+    #this brings in all ofn the data needed as stated from the project scope
     sql_query = """SELECT * FROM properties_2017
     join predictions_2017
     USING (parcelid)
